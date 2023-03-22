@@ -9,7 +9,7 @@ Usage
 
 The script can be executed by running the following command:
 
-# bash
+# Usage:
 
 ./subdomain_enumeration.sh example.com
 

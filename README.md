@@ -1,22 +1,20 @@
-# deepersubh
+# Deepersubh
 # Deeper Level (Upto 4th Level) Subdomain Enumeration Script
 
 My New Deeper Level Subdomain Enumeration Automation Script Tool That Does Automated Enumeration Upto 4th Level Deep
+Subdomain Enumeration Script
 
-# Advanced Deeper Subdomain Enumeration Script
 This is a bash script that can be used to enumerate subdomains of a given domain name. The script uses three subdomain enumeration tools: Subfinder, Assetfinder, and Amass.
-
-#Usage
+Usage
 
 The script can be executed by running the following command:
 
-bash
+# bash
 
 ./subdomain_enumeration.sh example.com
 
 This will create a directory named example.com_Deeper_Sub and perform subdomain enumeration for the specified domain.
-
-# Output
+Output
 
 The script will output four files containing the enumerated subdomains:
 

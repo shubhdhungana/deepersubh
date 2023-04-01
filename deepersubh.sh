@@ -44,11 +44,19 @@ amass enum -d $DOMAIN -rf $DIRECTORY/all_subdomains_4.txt -o $DIRECTORY/amass_4.
 cat $DIRECTORY/subfinder_4.txt $DIRECTORY/assetfinder_4.txt $DIRECTORY/amass_4.txt | sort -u | tee $DIRECTORY/4th_level_subdomains_all.txt
    
 
-# deleting unnecessary files
+# deleting unnecessary files and keeping necessary files
 echo "Deleting unnecessary files"
 echo " "
 rm -rf $DIRECTORY/subfinder_1.txt $DIRECTORY/assetfinder_1.txt $DIRECTORY/amass_1.txt $DIRECTORY/subfinder_2.txt $DIRECTORY/assetfinder_2.txt $DIRECTORY/amass_2.txt $DIRECTORY/subfinder_3.txt $DIRECTORY/assetfinder_3.txt $DIRECTORY/amass_3.txt $DIRECTORY/subfinder_4.txt $DIRECTORY/assetfinder_4.txt $DIRECTORY/amass_4.txt
-
+echo " "
+echo "Now showing all subdomains obtained at once"
+echo " "
+cat $DIRECTORY/1st_level_subdomains_all.txt $DIRECTORY/all_subdomains_2.txt $DIRECTORY/2nd_level_subdomains_all.txt $DIRECTORY/all_subdomains_3.txt $DIRECTORY/3rd_level_subdomains_all.txt $DIRECTORY/all_subdomains_4.txt $DIRECTORY/4th_level_subdomains_all.txt | sort -u | tee $DIRECTORY/all_deeper_subdomains.txt
+echo " "
+rm -r $DIRECTORY/1st_level_subdomains_all.txt $DIRECTORY/all_subdomains_2.txt $DIRECTORY/2nd_level_subdomains_all.txt $DIRECTORY/all_subdomains_3.txt $DIRECTORY/3rd_level_subdomains_all.txt $DIRECTORY/all_subdomains_4.txt $DIRECTORY/4th_level_subdomains_all.txt
+echo " "
+echo " "
+echo "NOW YOU CAN ENJOY YOUR DEEPER SUBDOMAINS OBTAINED"
 
 
 
